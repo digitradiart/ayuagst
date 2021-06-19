@@ -4,8 +4,8 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
-  /* color: rgb(66, 38, 16); */
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -17,21 +17,21 @@ body {
 /* HEADER */
 #navbar {
   background-color: rgb(66, 38, 16);
-  padding: 15px 24px;
+  padding: 20px;
   top: 0;
+  text-align: center;
 }
 
 #navbar a {
   font-size: 18px;
-  font-weight: 400;
   text-decoration: none;
   color: white;
+  padding: 20px;
 }
 
 #navbar li {
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
 }
 
 .sticky {
@@ -43,16 +43,14 @@ body {
 .jumbotron {
   min-height: 100vh;
   background-color: cadetblue;
-  margin: 0;
-  padding: 0;
-  background-image: url('../assets/background/kotatuajkt.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('../assets/ann-savchenko-H0h_89iFsWs-unsplash.jpg') no-repeat center fixed;
   background-size: cover;
-  background-attachment: fixed;
+  text-align: center;
+  font-weight: bold;
 }
 
 li a:active {
+  background-color: rgb(156, 131, 97);
   font-weight: bold;
 }
 
@@ -61,13 +59,19 @@ li a:hover {
 }
 
 .pages {
-  padding: 50px;
+  padding: 10%;
   min-height: 100vh;
 }
 
-#about,
-#blog,
-footer {
+section h1 {
+  text-align: center;
+}
+
+.even {
   background-color: cadetblue;
-  margin: 0;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
 }
