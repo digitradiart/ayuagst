@@ -1,10 +1,11 @@
-@media only screen and (max-width: 600px) {
-  nav li {
-    display: none;
-    visibility: hidden;
+@media only screen and (max-width: 720px) {
+  .jumbotron {
+    padding-top: 50%;
   }
 
-  .fa-bars {
-    visibility: visible;
+  .flex-page {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    margin: 0 auto;
   }
 }

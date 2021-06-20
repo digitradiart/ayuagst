@@ -1,6 +1,5 @@
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -8,13 +7,36 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
+html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
 
-/* HEADER */
+/* JUMBOTRON */
+.jumbotron {
+  min-height: 100vh;
+  background: url('../assets/jessica-krysinska-JxNhZF7u9P8-unsplash.jpg') no-repeat bottom center fixed;
+  background-size: cover;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.jumbotron h1 {
+  padding-top: 10%;
+}
+.horizontal-list ul li {
+  display: inline-block;
+  padding: 24px;
+}
+#arrow-down {
+  margin-bottom: 5%;
+  font-size: 1.5em;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
 nav {
   background-color: rgb(66, 38, 16);
   height: auto;
@@ -22,103 +44,61 @@ nav {
   padding: 20px;
   text-align: center;
 }
-
 nav a {
   font-size: 1em;
   text-decoration: none;
   color: white;
   padding: 20px;
 }
-
 nav li {
   display: inline;
   list-style-type: none;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.jumbotron {
-  min-height: 100vh;
-  background-color: cadetblue;
-  background: url('../assets/jessica-krysinska-JxNhZF7u9P8-unsplash.jpg') no-repeat bottom center fixed;
-  background-size: cover;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.jumbotron h1 {
-  padding-top: 10%;
-}
-
 nav li a:active {
   background-color: rgb(156, 131, 97);
   font-weight: bold;
 }
-
 nav ul li a:hover {
-  border-bottom: 4px solid #ffffff;
+  border-bottom: 4px solid #fff;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(66, 38, 16, 0.5);
 }
 
+/* PAGES */
 .pages {
   padding: 10%;
   min-height: 100vh;
 }
-
 section h1 {
   text-align: center;
+  padding: 24px;
 }
-
 .even {
-  background-color: cadetblue;
+  background-image: linear-gradient(45deg, #2857a4 0%, #403066 40%);
 }
-
 footer {
   padding: 25px;
   text-align: center;
 }
 
+/* ABOUT */
 #about img {
-  width: 40%;
+  width: 150px;
   border-radius: 50%;
   background-color: #fff;
-  border: 3px solid rgb(154, 163, 163);
+  /* border: 2px solid rgb(154, 163, 163); */
   box-shadow: 0 0 20px 10px #fff, 0 0 25px 15px cadetblue;
+  margin-right: 50px;
 }
 
-#contact .horizontal-list {
-  list-style: none;
-  padding-left: 0px;
-  margin: 0px;
-}
-
-#contact .horizontal-list li {
-  display: inline-block;
-  margin: 0px 8px 8px 0px;
-  font-weight: 100;
-  font-size: 0.9rem;
-}
-
-#contact .horizontal-list li a {
-  color: white;
-  text-decoration: none;
-}
-
-#contact .social-icons li a i {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 50%;
-}
-
-#contact .social-icons li a i:hover {
-  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-}
-
-.fa-bars {
-  color: #fff;
-  visibility: hidden;
+.flex-page {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  border: 1px solid;
+  align-items: center;
 }

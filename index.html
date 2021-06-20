@@ -8,15 +8,15 @@
     <meta name="keywords" content="HTML, CSS, JS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/blogresponsive.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
         <div class="jumbotron pages" id="home">
-            <h1>AYU AGUSTINA</h1>
+            <h1>Ayu Agustina</h1>
             <h2>
                 <a href="" class="typewrite" data-period="1000"
                     data-type='["Mathematics Teacher", "Occassional Graphic Designer", "Novice Coder"]'
@@ -24,38 +24,118 @@
                     <span class="wrap"></span>
                 </a>
             </h2>
+            <div class="horizontal-list social-icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                </ul>
+            </div>
+
+            <a href="#about" id="arrow-down"><i class="fab fa fa-arrow-circle-down"></i></a>
         </div>
 
         <!-- NAVIGATION -->
         <nav id="navbar">
-            <li><a class="active" href='#home'>Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <ul>
+                <li><a class="active" href='#home'>Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section class="pages even" id="about">
-            <h1>Hi there!</h1>
+            <h1>About</h1>
+            <div class="flex-page">
+                <div id="profile-photo" class="flex-item">
+                    <img src="/assets/ayu-avatar.png" alt="profile">
+                </div>
+                <div class="flex-item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam similique voluptas, laboriosam
+                        deserunt illo cumque accusantium nostrum quidem iusto doloremque velit omnis ea eligendi at,
+                        atque,
+                        consequatur hic earum nulla.
+                    </p>
+                </div>
+
+
+            </div>
         </section>
 
-        <section class="pages odd" id="skill">
-            <h1>What I've been learning</h1>
+        <section class="pages odd" id="skills">
+            <h1>Skills</h1>
         </section>
 
         <section class="pages even" id="experience">
-            <h1>What I've been trying</h1>
+            <h1>Experience</h1>
         </section>
 
         <section class="pages odd" id="portfolio">
-            <h1>These are some of my projects</h1>
+            <h1>Portfolio</h1>
         </section>
 
         <section class="pages even" id="contact">
-            <h1>Keep in touch, guys!</h1>
+            <h1 class="section-heading mb75px ">
+                <span>
+                    <i class="far fa-id-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+
+            <div class="display-form-info">
+
+                <form class="form-container">
+                    <input class="transparent" type="text" name="name" placeholder="Your Name">
+                    <hr class="remove-margin-top-bottom mb20px">
+                    <input class="transparent" type="text" name="email" placeholder="Your Email">
+                    <hr class="remove-margin-top-bottom mb20px">
+                    <textarea class="transparent" placeholder="Message"></textarea>
+                    <hr class="remove-margin-top-bottom mb20px">
+                    <div>
+                        <button type="submit" value="submit">SEND MESSAGE</button>
+                    </div>
+
+                </form>
+
+
+                <div class="info-container">
+                    <h4 class="remove-margin-top-bottom mb20px">Get in Touch</h4>
+                    <p class="remove-margin-top-bottom mb20px">klkalskdlasmc saknkas alsdmka aldl ad aldl a fmvkfmkdc k
+                        dk c dkc dkc kd ckd ckd ckd ckd ck dkc dkc k calkdlaklda dalkdlad lsak dlaklk alkdla ks</p>
+                    <h4 class="remove-margin-top-bottom mb20px">My Address</h4>
+                    <div class="mb20px">
+                        <span class="mr10px"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Buitenzorg, Indonesia</span>
+                    </div>
+                    <div class="mb20px">
+                        <span class="mr10px"><i class="fas fa-mobile-alt"></i></span>
+                        <span>+628123456789</span>
+                    </div>
+                    <div class="mb20px">
+                        <span class="mr10px"><i class="far fa-envelope"></i></span>
+                        <span>ayu@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="name-social-container" style="color: aliceblue;">
+                <div>
+                    <ul class="horizontal-list social-icons">
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-stack-overflow"></i>Stackoverflow</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
