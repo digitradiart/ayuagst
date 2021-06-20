@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+  nav li {
+    display: none;
+    visibility: hidden;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+}

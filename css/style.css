@@ -11,25 +11,26 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* HEADER */
-#navbar {
+nav {
   background-color: rgb(66, 38, 16);
-  padding: 20px;
+  height: auto;
   top: 0;
+  padding: 20px;
   text-align: center;
 }
 
-#navbar a {
-  font-size: 18px;
+nav a {
+  font-size: 1em;
   text-decoration: none;
   color: white;
   padding: 20px;
 }
 
-#navbar li {
+nav li {
   display: inline;
   list-style-type: none;
 }
@@ -43,18 +44,23 @@ body {
 .jumbotron {
   min-height: 100vh;
   background-color: cadetblue;
-  background: url('../assets/ann-savchenko-H0h_89iFsWs-unsplash.jpg') no-repeat center fixed;
+  background: url('../assets/jessica-krysinska-JxNhZF7u9P8-unsplash.jpg') no-repeat bottom center fixed;
   background-size: cover;
   text-align: center;
   font-weight: bold;
+  font-size: 1.5em;
 }
 
-li a:active {
+.jumbotron h1 {
+  padding-top: 10%;
+}
+
+nav li a:active {
   background-color: rgb(156, 131, 97);
   font-weight: bold;
 }
 
-li a:hover {
+nav ul li a:hover {
   border-bottom: 4px solid #ffffff;
 }
 
@@ -74,4 +80,45 @@ section h1 {
 footer {
   padding: 25px;
   text-align: center;
+}
+
+#about img {
+  width: 40%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid rgb(154, 163, 163);
+  box-shadow: 0 0 20px 10px #fff, 0 0 25px 15px cadetblue;
+}
+
+#contact .horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+#contact .horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+#contact .horizontal-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact .social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+#contact .social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.fa-bars {
+  color: #fff;
+  visibility: hidden;
 }
