@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  clear: both;
 }
 html,
 body {
@@ -38,11 +39,12 @@ body {
 
 /* NAVIGATION */
 nav {
-  background-color: rgb(66, 38, 16);
+  background-color: rgb(68, 65, 117);
   height: auto;
   top: 0;
   padding: 20px;
   text-align: center;
+  z-index: 10;
 }
 nav a {
   font-size: 1em;
@@ -65,10 +67,25 @@ nav ul li a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(66, 38, 16, 0.5);
+  background-color: rgba(93, 100, 170, 0.4);
 }
 
 /* PAGES */
+main {
+  width: 60%;
+  float: left;
+}
+aside {
+  position: sticky;
+  position: s;
+  /* margin-right: 0%; */
+  overflow: auto;
+  height: 100%;
+  width: 40%;
+  background-color: red;
+  float: right;
+  clear: right;
+}
 .pages {
   padding: 10%;
   min-height: 100vh;
@@ -76,13 +93,18 @@ nav ul li a:hover {
 section h1 {
   text-align: center;
   padding: 24px;
+  color: #fff;
 }
 .even {
-  background-image: linear-gradient(45deg, #2857a4 0%, #403066 40%);
+  background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
+}
+.odd {
+  background-image: linear-gradient(45deg, #645977 0%, #463442 50%);
 }
 footer {
   padding: 25px;
   text-align: center;
+  clear: both;
 }
 
 /* ABOUT */
@@ -101,4 +123,9 @@ footer {
   -ms-flex-direction: row;
   border: 1px solid;
   align-items: center;
+}
+
+
+.mb75px {
+  margin-bottom: 75px;
 }
