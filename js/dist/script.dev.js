@@ -1,5 +1,6 @@
-// STICKY NAVBAR
+"use strict";
 
+// STICKY NAVBAR
 window.onscroll = function () {
   myFunction();
 };
@@ -13,17 +14,12 @@ function myFunction() {
   } else {
     navbar.classList.remove('sticky');
   }
-}
-
-// ASIDE STICKY
-
+} // ASIDE STICKY
 // window.onscroll = function () {
 //   myFunction2();
 // };
-
 // var contact = document.getElementById('contact');
 // var asideSticky = contact.offsetTop;
-
 // function myFunction2() {
 //   if (window.pageYOffset >= asideSticky) {
 //     contact.classList.add('asideSticky');
@@ -31,9 +27,10 @@ function myFunction() {
 //     contact.classList.remove('asideSticky');
 //   }
 // }
-
 // TYPING TEXT
-var TxtType = function (el, toRotate, period) {
+
+
+var TxtType = function TxtType(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -54,7 +51,6 @@ TxtType.prototype.tick = function () {
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
   var that = this;
   var delta = 200 - Math.random() * 400; //100
 
@@ -78,14 +74,17 @@ TxtType.prototype.tick = function () {
 
 window.onload = function () {
   var elements = document.getElementsByClassName('typewrite');
+
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-type');
     var period = elements[i].getAttribute('data-period');
+
     if (toRotate) {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
-  }
-  // INJECT CSS
+  } // INJECT CSS
+
+
   var css = document.createElement('style');
   css.type = 'text/css';
   css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid red}';
