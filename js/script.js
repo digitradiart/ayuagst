@@ -15,23 +15,6 @@ function myFunction() {
   }
 }
 
-// ASIDE STICKY
-
-// window.onscroll = function () {
-//   myFunction2();
-// };
-
-// var contact = document.getElementById('contact');
-// var asideSticky = contact.offsetTop;
-
-// function myFunction2() {
-//   if (window.pageYOffset >= asideSticky) {
-//     contact.classList.add('asideSticky');
-//   } else {
-//     contact.classList.remove('asideSticky');
-//   }
-// }
-
 // TYPING TEXT
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;

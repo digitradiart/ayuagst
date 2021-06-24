@@ -45,6 +45,7 @@ body {
 
 /* NAVIGATION */
 nav {
+  width: 60%;
   background-color: rgb(68, 65, 117);
   height: auto;
   top: 0;
@@ -77,13 +78,8 @@ nav ul li a:hover {
 .sticky {
   position: fixed;
   top: 0;
-  width: 60%;
   background-color: rgba(93, 100, 170, 0.4);
 }
-/* .asideSticky {
-  position: fixed;
-  top: 0;
-} */
 
 /* PAGES */
 .float-left {
@@ -92,12 +88,15 @@ nav ul li a:hover {
 }
 
 aside {
-  position: sticky;
-  overflow: auto;
   width: 40%;
   background-color: red;
   float: right;
   clear: right;
+  position: relative;
+  z-index: 1;
+  right: 0;
+  overflow-x: hidden;
+  border: 1px solid red;
 }
 
 .pages {
