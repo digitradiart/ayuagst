@@ -1,22 +1,6 @@
 "use strict";
 
-// STICKY NAVBAR
-window.onscroll = function () {
-  myFunction();
-};
-
-var navbar = document.getElementById('navbar');
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-} // TYPING TEXT
-
-
+// TYPING TEXT
 var TxtType = function TxtType(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;

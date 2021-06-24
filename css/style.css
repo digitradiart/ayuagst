@@ -14,6 +14,7 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  background-color: yellow;
 }
 
 /* JUMBOTRON */
@@ -46,12 +47,13 @@ body {
 /* NAVIGATION */
 nav {
   width: 60%;
-  background-color: rgb(68, 65, 117);
+  /* background-color: rgb(68, 65, 117); */
+  background-color: red;
   height: auto;
-  top: 0;
   padding: 20px;
   text-align: center;
   z-index: 10;
+  float: left;
 }
 
 nav a {
@@ -75,34 +77,36 @@ nav ul li a:hover {
   border-bottom: 4px solid #fff;
 }
 
-.sticky {
+.stickyNav {
   position: fixed;
   top: 0;
+  width: 100%;
   background-color: rgba(93, 100, 170, 0.4);
 }
 
 /* PAGES */
-.float-left {
-  float: left;
-  width: 60%;
-}
 
 aside {
-  width: 40%;
-  background-color: red;
+  overflow-x: hidden;
   float: right;
   clear: right;
-  position: relative;
-  z-index: 1;
-  right: 0;
-  overflow-x: hidden;
-  border: 1px solid red;
+  min-height: 100vh;
+  width: 40%;
+  background-color: rgb(68, 65, 117);
+  padding: 20px;
+  text-align: center;
 }
 
 .pages {
   padding: 10%;
   background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
-  /* min-height: 100vh; */
+  min-height: 100vh;
+}
+
+main {
+  margin: 0;
+  width: 60%;
+  top: 0;
 }
 
 section h1 {
@@ -111,16 +115,8 @@ section h1 {
   color: #fff;
 }
 
-/* .even {
-  background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
-}
-
-.odd {
-  background-image: linear-gradient(45deg, #645977 0%, #463442 50%);
-} */
-
 footer {
-  width: 100%;
+  width: 60%;
   position: relative;
   padding: 5px;
   text-align: center;
@@ -143,10 +139,6 @@ footer {
   -ms-flex-direction: row;
   border: 1px solid;
   align-items: center;
-}
-
-.mb75px {
-  margin-bottom: 75px;
 }
 
 #name-social-container {

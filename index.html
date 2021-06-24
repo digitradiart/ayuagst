@@ -37,8 +37,8 @@
         </div>
     </header>
 
-    <div class="float-left">
-        <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <div id="stickynavbar">
         <nav id="navbar">
             <ul>
                 <li><a class="active" href='#home'>Home</a></li>
@@ -49,105 +49,110 @@
             </ul>
         </nav>
 
-        <main>
-            <section class="pages even" id="about">
-                <h1>About</h1>
-                <div class="flex-page">
-                    <div id="profile-photo" class="flex-item">
-                        <img src="/assets/ayu-avatar.png" alt="profile">
+        <aside id="contact">
+
+            <h1 class="section-heading ">
+                <span>
+                    <i class="far fa-id-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+
+            <div class="display-form-info">
+                <form class="form-container">
+                    <input class="transparent" type="text" name="name" placeholder="Your Name">
+                    <hr class="remove-margin-top-bottom">
+                    <input class="transparent" type="text" name="email" placeholder="Your Email">
+                    <hr class="remove-margin-top-bottom">
+                    <textarea class="transparent" placeholder="Message"></textarea>
+                    <hr class="remove-margin-top-bottom">
+                    <div>
+                        <button type="submit" value="submit">SEND MESSAGE</button>
                     </div>
-                    <div class="flex-item">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam similique voluptas,
-                            laboriosam
-                            deserunt illo cumque accusantium nostrum quidem iusto doloremque velit omnis ea eligendi at,
-                            atque,
-                            consequatur hic earum nulla.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut pariatur fuga adipisci
-                            illo debitis officiis dicta quaerat quae et! Ullam nesciunt adipisci aliquam modi labore
-                            iste culpa doloremque molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Sed numquam ea accusantium, nulla voluptates obcaecati corrupti soluta laudantium odit,
-                            velit aliquam nesciunt, voluptate debitis. Illum sint expedita ex eveniet dolor?</p>
+                </form>
+
+
+                <div class="info-container">
+                    <h4 class="remove-margin-top-bottom ">Get in Touch</h4>
+                    <p class="remove-margin-top-bottom ">klkalskdlasmc saknkas alsdmka aldl ad aldl a fmvkfmkdc k
+                        dk c dkc dkc kd ckd ckd ckd ckd ck dkc dkc k calkdlaklda dalkdlad lsak dlaklk alkdla ks</p>
+                    <h4 class="remove-margin-top-bottom ">My Address</h4>
+                    <div>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Buitenzorg, Indonesia</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-mobile-alt"></i></span>
+                        <span>+628123456789</span>
+                    </div>
+                    <div>
+                        <span><i class="far fa-envelope"></i></span>
+                        <span>ayu@gmail.com</span>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="pages odd" id="skill">
-                <h1>Skill</h1>
-            </section>
-
-            <section class="pages even" id="experience">
-                <h1>Experience</h1>
-            </section>
-
-            <section class="pages odd" id="portfolio">
-                <h1>Portfolio</h1>
-            </section>
-        </main>
+            <div id="name-social-container" style="color: aliceblue;">
+                <div>
+                    <ul class="horizontal-list social-icons">
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-stack-overflow"></i>Stackoverflow</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
     </div>
 
-    <aside class="pages sticky" id="contact">
 
-        <h1 class="section-heading ">
-            <span>
-                <i class="far fa-id-card"></i>
-            </span>
-            <span> Contact </span>
-        </h1>
-
-        <div class="display-form-info">
-            <form class="form-container">
-                <input class="transparent" type="text" name="name" placeholder="Your Name">
-                <hr class="remove-margin-top-bottom mb20px">
-                <input class="transparent" type="text" name="email" placeholder="Your Email">
-                <hr class="remove-margin-top-bottom mb20px">
-                <textarea class="transparent" placeholder="Message"></textarea>
-                <hr class="remove-margin-top-bottom mb20px">
-                <div>
-                    <button type="submit" value="submit">SEND MESSAGE</button>
+    <main>
+        <section class="pages" id="about">
+            <h1>About</h1>
+            <div class="flex-page">
+                <div id="profile-photo" class="flex-item">
+                    <img src="/assets/ayu-avatar.png" alt="profile">
                 </div>
-            </form>
-
-
-            <div class="info-container">
-                <h4 class="remove-margin-top-bottom mb20px">Get in Touch</h4>
-                <p class="remove-margin-top-bottom mb20px">klkalskdlasmc saknkas alsdmka aldl ad aldl a fmvkfmkdc k
-                    dk c dkc dkc kd ckd ckd ckd ckd ck dkc dkc k calkdlaklda dalkdlad lsak dlaklk alkdla ks</p>
-                <h4 class="remove-margin-top-bottom mb20px">My Address</h4>
-                <div class="mb20px">
-                    <span class="mr10px"><i class="fas fa-map-marker-alt"></i></span>
-                    <span>Buitenzorg, Indonesia</span>
-                </div>
-                <div class="mb20px">
-                    <span class="mr10px"><i class="fas fa-mobile-alt"></i></span>
-                    <span>+628123456789</span>
-                </div>
-                <div class="mb20px">
-                    <span class="mr10px"><i class="far fa-envelope"></i></span>
-                    <span>ayu@gmail.com</span>
+                <div class="flex-item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam similique voluptas,
+                        laboriosam
+                        deserunt illo cumque accusantium nostrum quidem iusto doloremque velit omnis ea eligendi at,
+                        atque,
+                        consequatur hic earum nulla.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut pariatur fuga adipisci
+                        illo debitis officiis dicta quaerat quae et! Ullam nesciunt adipisci aliquam modi labore
+                        iste culpa doloremque molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed numquam ea accusantium, nulla voluptates obcaecati corrupti soluta laudantium odit,
+                        velit aliquam nesciunt, voluptate debitis. Illum sint expedita ex eveniet dolor?</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="name-social-container" style="color: aliceblue;">
-            <div>
-                <ul class="horizontal-list social-icons">
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
-                    <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-stack-overflow"></i>Stackoverflow</a></li>
-                </ul>
-            </div>
-        </div>
-    </aside>
+        <section class="pages " id="skill">
+            <h1>Skill</h1>
+        </section>
+
+        <section class="pages " id="experience">
+            <h1>Experience</h1>
+        </section>
+
+        <section class="pages " id="portfolio">
+            <h1>Portfolio</h1>
+        </section>
+    </main>
+
+
 
     <footer class="odd">
         <p>digitradiart &copy 2021</p>
         <p>Buitenzorg, ID</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/typingtext.js"></script>
+    <script src="js/stickynavbar.js"></script>
+
 </body>
 
 </html>
