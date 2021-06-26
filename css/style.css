@@ -95,9 +95,7 @@ main {
   top: 0;
   float: right;
   clear: right;
-  /* background-image: linear-gradient(45deg, #3c5885 0%, #362b50 70%); */
   background-image: linear-gradient(45deg, #2857a4 0%, #403066 60%);
-  /* background-image: linear-gradient(45deg, #3d9dc9 0%, rgb(9, 65, 97) 50%); */
   overflow: hidden;
   min-height: 100vh;
   padding: 5%;
@@ -172,4 +170,11 @@ footer {
   bottom: 0;
   float: right;
   clear: right;
+  background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
+}
+
+/* DARK-MODE */
+.dark-mode {
+  background-color: black;
+  color: white;
 }
