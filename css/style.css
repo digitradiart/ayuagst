@@ -1,5 +1,5 @@
 /* GLOBAL */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,14 +8,13 @@
   padding: 0;
   scroll-behavior: smooth;
   clear: both;
+  font-family: 'Quicksand', sans-serif;
   list-style-type: none;
 }
 
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  /* color: white; */
   line-height: 2rem;
 }
 
@@ -41,7 +40,6 @@ body {
 
 #arrow-down {
   font-size: 2em;
-  /* color: #fff; */
   position: absolute;
   left: 50%;
   top: 60%;
@@ -52,23 +50,23 @@ nav {
   text-align: left;
   height: auto;
   float: left;
+  margin-bottom: 15%;
 }
 
 nav ul li a {
   display: block;
   font-size: 1em;
-  /* color: white; */
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 nav ul li a:hover {
-  font-weight: 900;
   margin-left: 10px;
 }
 
 nav li a:active {
-  box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px rgb(170, 118, 172);
   background-color: rgba(107, 105, 153, 0.5);
+  font-weight: 900;
+  border-radius: 10px;
 }
 
 .stickyNav {
@@ -86,22 +84,32 @@ aside {
   padding: 5%;
 }
 
+section .btn-toggle {
+  right: 40px;
+  top: 105vh;
+  position: absolute;
+  z-index: 10;
+}
+
 /* MAIN */
 main {
-  margin: 0;
   width: 70%;
   top: 0;
   float: right;
   clear: right;
-
   overflow: hidden;
   min-height: 100vh;
   padding: 5%;
 }
 
+main p {
+  padding-top: 20px;
+}
+
 section h1 {
   text-align: center;
   padding: 24px;
+  border-radius: 10px;
 }
 
 .horizontal-list {
@@ -114,8 +122,11 @@ section h1 {
 .horizontal-list a {
   font-size: 1em;
   text-decoration: none;
-
   padding: 20px;
+}
+
+#navbar .fa {
+  margin-right: 10px;
 }
 
 .horizontal-list li {
@@ -162,4 +173,35 @@ footer {
   bottom: 0;
   float: right;
   clear: right;
+}
+
+/* LOGIN FORM */
+.form-container {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form input,
+textarea,
+form button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+form input,
+button {
+  min-height: 35px;
+}
+
+textarea {
+  min-height: 50px;
+}
+
+.btn-toggle {
+  border: none;
+  width: 30px;
+  height: 30px;
 }

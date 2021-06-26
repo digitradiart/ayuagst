@@ -1,5 +1,4 @@
 // STICKY NAVBAR
-
 window.onscroll = function () {
   myFunction();
 };
