@@ -15,7 +15,7 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: white;
+  /* color: white; */
   line-height: 2rem;
 }
 
@@ -41,7 +41,7 @@ body {
 
 #arrow-down {
   font-size: 2em;
-  color: #fff;
+  /* color: #fff; */
   position: absolute;
   left: 50%;
   top: 60%;
@@ -57,7 +57,7 @@ nav {
 nav ul li a {
   display: block;
   font-size: 1em;
-  color: white;
+  /* color: white; */
   padding: 10px;
 }
 
@@ -67,7 +67,7 @@ nav ul li a:hover {
 }
 
 nav li a:active {
-  box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px cadetblue;
+  box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px rgb(170, 118, 172);
   background-color: rgba(107, 105, 153, 0.5);
 }
 
@@ -82,8 +82,6 @@ aside {
   clear: left;
   min-height: 100vh;
   width: 30%;
-  background-color: rgb(68, 65, 117);
-  /* background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%); */
   text-align: center;
   padding: 5%;
 }
@@ -95,7 +93,7 @@ main {
   top: 0;
   float: right;
   clear: right;
-  background-image: linear-gradient(45deg, #2857a4 0%, #403066 60%);
+
   overflow: hidden;
   min-height: 100vh;
   padding: 5%;
@@ -104,8 +102,6 @@ main {
 section h1 {
   text-align: center;
   padding: 24px;
-  background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
-  color: #fff;
 }
 
 .horizontal-list {
@@ -118,7 +114,7 @@ section h1 {
 .horizontal-list a {
   font-size: 1em;
   text-decoration: none;
-  color: white;
+
   padding: 20px;
 }
 
@@ -130,10 +126,6 @@ section h1 {
 .horizontal-list li a:active {
   background-color: rgba(107, 105, 153, 0.5);
   font-weight: bold;
-}
-
-.horizontal-list ul li a:hover {
-  border-bottom: 4px solid #fff;
 }
 
 .pages {
@@ -148,7 +140,7 @@ section h1 {
   width: 150px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0 0 20px 10px #fff, 0 0 25px 15px cadetblue;
+  box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px rgb(170, 118, 172);
   margin-right: 30px;
 }
 
@@ -170,11 +162,4 @@ footer {
   bottom: 0;
   float: right;
   clear: right;
-  background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
-}
-
-/* DARK-MODE */
-.dark-mode {
-  background-color: black;
-  color: white;
 }
