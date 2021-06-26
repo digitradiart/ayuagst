@@ -2,7 +2,9 @@ body,
 .horizontal-list a,
 #arrow-down,
 nav ul li a,
-form input {
+form input,
+form textarea,
+form button {
   color: rgb(64, 8, 71);
 }
 

@@ -205,3 +205,7 @@ textarea {
   width: 30px;
   height: 30px;
 }
+
+form button:active {
+  box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px rgb(170, 118, 172);
+}
