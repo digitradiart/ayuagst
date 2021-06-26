@@ -5,7 +5,7 @@ window.onscroll = function () {
   myFunction();
 };
 
-var navbar = document.getElementById('stickynavbar');
+var navbar = document.getElementById('contact');
 var stickyNav = navbar.offsetTop;
 
 function myFunction() {
