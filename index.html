@@ -9,7 +9,6 @@
     <meta name="keywords" content="HTML, CSS, JS">
     <link href="css/responsive.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <!-- <link href="css/dark-theme.css" type="text/css" rel="stylesheet"> -->
     <link href="css/light-theme.css" rel="stylesheet" id="theme-link">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
@@ -31,16 +30,18 @@
     </header>
 
     <!-- ASIDE -->
-    <aside id="contact">
+
+    <aside id="contact" class="sidenav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
         <!-- NAVIGATION -->
         <nav id="navbar">
-            <ul>
-                <li><a class="active" href='#home'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
-                <li><a href="#skill"><i class="fa fa-cogs" aria-hidden="true"></i>Skill</a></li>
-                <li><a href="#experience"><i class="fa fa-sticky-note" aria-hidden="true"></i>Experience</a></li>
-                <li><a href="#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i>Portfolio</a></li>
-            </ul>
+            <span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+            <li><a class="active" href='#home'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
+            <li><a href="#skill"><i class="fa fa-cogs" aria-hidden="true"></i>Skill</a></li>
+            <li><a href="#experience"><i class="fa fa-sticky-note" aria-hidden="true"></i>Experience</a></li>
+            <li><a href="#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i>Portfolio</a></li>
         </nav>
 
         <form class="form-container">
@@ -64,7 +65,7 @@
             <h1>About</h1>
             <div class="flex-page">
                 <div class="flex-item">
-                    <img src="/assets/vespa.jpg" alt="profile" id="profile-photo">
+                    <img src="ayu-avatar.png" alt="profile" id="profile-photo">
                 </div>
                 <div class="flex-item">
                     <p>
@@ -143,6 +144,7 @@
     <script src="js/typingtext.js"></script>
     <script src="js/stickynavbar.js"></script>
     <script src="js/toggle.js"></script>
+    <!-- <script src="js/sideNavResponsive.js"></script> -->
 
 </body>
 
