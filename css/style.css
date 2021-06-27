@@ -39,6 +39,7 @@ body {
 }
 
 #arrow-down {
+  transition: 0.5s;
   font-size: 2em;
   position: absolute;
   left: 50%;
@@ -77,6 +78,7 @@ nav li a {
 }
 
 nav li a:hover {
+  transition: 0.3s;
   margin-left: 10px;
 }
 
@@ -135,6 +137,7 @@ section h1 {
 }
 
 .horizontal-list li a:active {
+  transition: 0.3s;
   background-color: rgba(107, 105, 153, 0.5);
   font-weight: bold;
 }
@@ -207,10 +210,6 @@ textarea {
 }
 
 form button:active {
+  transition: 0.3s;
   box-shadow: 0 0 5px 5px #fff, 0 0 10px 10px rgb(170, 118, 172);
-}
-
-aside span {
-  visibility: hidden;
-  position: sticky;
 }

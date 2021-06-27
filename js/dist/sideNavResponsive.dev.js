@@ -1,7 +1,7 @@
 "use strict";
 
 function openNav() {
-  document.getElementById('contact').style.width = '100%';
+  document.getElementById('contact').style.width = '60%';
 }
 
 function closeNav() {

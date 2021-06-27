@@ -30,10 +30,9 @@
     </header>
 
     <!-- ASIDE -->
+    <!-- <span id="hamburger" style="font-size:30px;cursor:pointer; right: 0;" onclick="openNav()">&#9776;</span> -->
 
     <aside id="contact" class="sidenav">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
         <!-- NAVIGATION -->
         <nav id="navbar">
             <span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
@@ -59,7 +58,9 @@
     </aside>
 
     <!-- MAIN -->
-    <main>
+    <main id="container">
+        <span id="hamburger" style="font-size:30px;cursor:pointer; right: 0;" onclick="openNav()">&#9776;</span>
+
         <section class="pages" id="about">
             <button class="btn-toggle"><i class="fa fa-toggle-on" aria-hidden="true"></i></button>
             <h1>About</h1>
@@ -144,7 +145,7 @@
     <script src="js/typingtext.js"></script>
     <script src="js/stickynavbar.js"></script>
     <script src="js/toggle.js"></script>
-    <!-- <script src="js/sideNavResponsive.js"></script> -->
+    <script src="js/sideNavResponsive.js"></script>
 
 </body>
 
