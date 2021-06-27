@@ -1,17 +1,2 @@
 @media only screen and (max-width: 720px) {
-  .jumbotron {
-    padding-top: 50%;
-  }
-
-  .flex-page {
-    flex-direction: column;
-    -ms-flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .pages {
-    padding: 10%;
-    background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
-    min-height: 100vh;
-  }
 }
