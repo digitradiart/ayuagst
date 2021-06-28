@@ -46,7 +46,64 @@ body {
   top: 60%;
 }
 
+/* ASIDE */
+aside {
+  float: left;
+  clear: left;
+  min-height: 100vh;
+  width: 30%;
+  text-align: center;
+  padding: 5%;
+}
+
+section .btn-toggle {
+  right: 40px;
+  top: 105vh;
+  position: absolute;
+  z-index: 8;
+}
+
+/* NAVIGATION */
+nav {
+  text-align: left;
+  height: auto;
+  float: left;
+  margin-bottom: 15%;
+}
+
+nav li a {
+  display: block;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+nav li a:hover {
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+nav li a:active {
+  background-color: rgba(107, 105, 153, 0.5);
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0;
+}
+
 /* MAIN */
+main {
+  width: 70%;
+  top: 0;
+  float: right;
+  clear: right;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 5%;
+}
+
 main p {
   padding-top: 20px;
 }
@@ -73,11 +130,6 @@ footer h1 {
 
 #navbar .fa {
   margin-right: 10px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
 }
 
 .horizontal-list li {

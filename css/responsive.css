@@ -1,32 +1,31 @@
 /* Extra small devices (phones, 768px and down) */
-@media only screen and (max-width: 600px) {
-  * {
+@media only screen and (max-width: 900px) {
+  main {
     color: red;
   }
 
-  main {
-    width: 100%;
-    float: left;
-    clear: left;
-  }
-
   aside {
-    height: 100%;
-    width: 0;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    text-align: center;
+    display: none;
+    visibility: hidden;
   }
 
-  aside a {
-    text-decoration: none;
+  .pages {
+    width: 100%;
+  }
+
+  nav #top-navbar {
+    height: 65px;
+    width: 100%;
+  }
+
+  #top-navbar li a {
     display: block;
+    background-color: blue;
+    border: 1px solid;
+    z-index: 10;
   }
 
+  /* 
   nav .closebtn,
   form .closebtn,
   textarea .closebtn {
@@ -36,16 +35,75 @@
     right: 25px;
     font-size: 36px;
     margin-left: -30%;
-  }
-
-  /* span #hamburger {
-    float: right;
-    right: 0;
-    background-color: red;
-    position: relative;
   } */
+
+  main #hamburger {
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-} */
+@media only screen and (min-width: 900px) {
+  /* ASIDE */
+  aside.show-on-large {
+    float: left;
+    clear: left;
+    min-height: 100vh;
+    width: 30%;
+    text-align: center;
+    padding: 5%;
+  }
+
+  section .btn-toggle {
+    right: 40px;
+    top: 105vh;
+    position: absolute;
+    z-index: 8;
+  }
+
+  /* MAIN */
+  main {
+    width: 70%;
+    top: 0;
+    float: right;
+    clear: right;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 5%;
+    /* position: relative; */
+  }
+
+  /* NAVIGATION */
+  aside nav {
+    text-align: left;
+    height: auto;
+    float: left;
+    margin-bottom: 15%;
+  }
+
+  aside nav li a {
+    display: block;
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+
+  aside nav li a:hover {
+    transition: 0.3s;
+    margin-left: 10px;
+  }
+
+  aside nav li a:active {
+    background-color: rgba(107, 105, 153, 0.5);
+    font-weight: 900;
+    border-radius: 10px;
+  }
+
+  nav.top-navbar,
+  #hamburger {
+    display: none;
+    visibility: hidden;
+  }
+}

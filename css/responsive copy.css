@@ -1,0 +1,51 @@
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    color: red;
+  }
+
+  main {
+    width: 100%;
+    float: left;
+    clear: left;
+  }
+
+  aside {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  aside a {
+    text-decoration: none;
+    display: block;
+  }
+
+  nav .closebtn,
+  form .closebtn,
+  textarea .closebtn {
+    position: absolute;
+    top: 0;
+
+    right: 25px;
+    font-size: 36px;
+    margin-left: -30%;
+  }
+
+  /* span #hamburger {
+    float: right;
+    right: 0;
+    background-color: red;
+    position: relative;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+} */

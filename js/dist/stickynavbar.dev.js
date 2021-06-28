@@ -1,3 +1,5 @@
+"use strict";
+
 // STICKY NAVBAR
 window.onscroll = function () {
   myFunction();
