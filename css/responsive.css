@@ -13,29 +13,13 @@
     width: 100%;
   }
 
-  nav #top-navbar {
-    height: 65px;
-    width: 100%;
-  }
-
-  #top-navbar li a {
-    display: block;
+  .top-navbar {
     background-color: blue;
-    border: 1px solid;
-    z-index: 10;
   }
 
-  /* 
-  nav .closebtn,
-  form .closebtn,
-  textarea .closebtn {
-    position: absolute;
-    top: 0;
-
-    right: 25px;
-    font-size: 36px;
-    margin-left: -30%;
-  } */
+  .top-navbar li {
+    display: none;
+  }
 
   main #hamburger {
     top: 5px;
@@ -45,7 +29,7 @@
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium-Large devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 900px) {
   /* ASIDE */
   aside.show-on-large {
