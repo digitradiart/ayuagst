@@ -108,7 +108,8 @@ main p {
   padding-top: 20px;
 }
 
-section h1 {
+section h1,
+footer h1 {
   text-align: center;
   padding: 24px;
   border-radius: 10px;
@@ -144,7 +145,6 @@ section h1 {
 
 .pages {
   padding: 5%;
-  margin-top: 10px;
   min-height: 100vh;
   text-align: justify;
 }

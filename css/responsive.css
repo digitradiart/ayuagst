@@ -10,7 +10,7 @@
     clear: left;
   }
 
-  .sidenav {
+  aside {
     height: 100%;
     width: 0;
     z-index: 1;
@@ -22,7 +22,7 @@
     text-align: center;
   }
 
-  .sidenav a {
+  aside a {
     text-decoration: none;
     display: block;
   }
