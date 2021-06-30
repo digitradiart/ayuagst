@@ -8,17 +8,26 @@ form button {
   color: rgb(64, 8, 71);
 }
 
+aside,
 main,
-section h1,
+article h1,
 footer,
 form input,
 textarea,
+.pages,
 form button {
-  background-image: linear-gradient(45deg, #f2bbf7 0%, #b0abbb 50%);
+  background-image: linear-gradient(45deg, #f2bbf7 0%, #bba2b4 50%);
 }
 
 aside {
   background-color: rgb(189, 177, 185);
+}
+
+.horizontal-list li a:active {
+  transition: 0.3s;
+  color: #f2bbf7;
+  border-bottom: 4px solid #f2bbf7;
+  font-weight: bold;
 }
 
 .horizontal-list ul li a:hover {

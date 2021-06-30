@@ -61,7 +61,7 @@
 
     <!-- MAIN -->
     <main id="container">
-        <section class="pages" id="about">
+        <article class="pages" id="about">
             <!-- <span class="btn-toggle"><i class="fa fa-toggle-on" aria-hidden="true"></i></span> -->
             <h1>About</h1>
             <div class="flex-page">
@@ -101,9 +101,9 @@
                 </ul>
             </div>
 
-        </section>
+        </article>
 
-        <section class="pages " id="skill">
+        <article class="pages " id="skill">
             <h1>Skill</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at itaque deserunt corrupti quos.
                 Totam odio eius soluta dolores harum, accusantium esse ab consequatur praesentium aliquid quis
@@ -112,9 +112,9 @@
                 molestias accusantium officiis modi atque cupiditate incidunt dolore dolor numquam provident
                 necessitatibus rerum vitae perspiciatis odit.
             </p>
-        </section>
+        </article>
 
-        <section class="pages " id="experience">
+        <article class="pages " id="experience">
             <h1>Experience</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at itaque deserunt corrupti quos.
                 Totam odio eius soluta dolores harum, accusantium esse ab consequatur praesentium aliquid quis
@@ -123,9 +123,9 @@
                 molestias accusantium officiis modi atque cupiditate incidunt dolore dolor numquam provident
                 necessitatibus rerum vitae perspiciatis odit.
             </p>
-        </section>
+        </article>
 
-        <section class="pages " id="portfolio">
+        <article class="pages " id="portfolio">
             <h1>Portfolio</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at itaque deserunt corrupti quos.
                 Totam odio eius soluta dolores harum, accusantium esse ab consequatur praesentium aliquid quis
@@ -134,31 +134,34 @@
                 molestias accusantium officiis modi atque cupiditate incidunt dolore dolor numquam provident
                 necessitatibus rerum vitae perspiciatis odit.
             </p>
-        </section>
+        </article>
+
+        <article class="pages" id="contact">
+            <form class="form-container">
+                <h1>Contact</h1>
+                <input class="transparent" type="text" name="name" placeholder="Your Name">
+                <hr>
+                <input class="transparent" type="text" name="email" placeholder="Your Email">
+                <hr>
+                <textarea class="transparent" placeholder="Message"></textarea>
+                <hr>
+                <div>
+                    <button type="submit" value="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </article>
     </main>
 
-    <footer class="pages" id="contact">
-        <form class="form-container">
-            <h1>Contact</h1>
-            <input class="transparent" type="text" name="name" placeholder="Your Name">
-            <hr>
-            <input class="transparent" type="text" name="email" placeholder="Your Email">
-            <hr>
-            <textarea class="transparent" placeholder="Message"></textarea>
-            <hr>
-            <div>
-                <button type="submit" value="submit">SEND MESSAGE</button>
-            </div>
-        </form>
-        <p>digitradiart &copy 2021</p>
-        <p></p>Buitenzorg, ID</p>
+    <footer class="footnote">
+        <div>
+            <p>Made with love by <strong><a>digitradiart</a></strong> &copy 2021</p>
+            <p>Buitenzorg, ID</p>
+        </div>
     </footer>
 
     <script src="js/typingtext.js"></script>
     <script src="js/stickynavbar.js"></script>
     <script src="js/toggle.js"></script>
-    <script src="js/sideNavResponsive.js"></script>
-
 </body>
 
 </html>

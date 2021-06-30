@@ -51,7 +51,7 @@ main p {
   padding-top: 20px;
 }
 
-section h1,
+article h1,
 footer h1 {
   text-align: center;
   padding: 24px;
@@ -68,7 +68,7 @@ footer h1 {
 .horizontal-list a {
   font-size: 1em;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 #navbar .fa {
@@ -85,16 +85,13 @@ footer h1 {
   list-style-type: none;
 }
 
-.horizontal-list li a:active {
-  transition: 0.3s;
-  background-color: rgba(107, 105, 153, 0.5);
-  font-weight: bold;
-}
-
 .pages {
-  padding: 5%;
-  min-height: 100vh;
+  min-height: max-content;
   text-align: justify;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
 }
 
 /* ABOUT */
@@ -118,14 +115,17 @@ footer h1 {
 }
 
 footer {
-  width: 70%;
+  width: 75%;
   padding: 5px;
   text-align: center;
-  bottom: 0;
   float: right;
   clear: right;
 }
-
+footer .footnote {
+  background-color: blue;
+  bottom: 0;
+  margin-bottom: 0;
+}
 /* LOGIN FORM */
 .form-container {
   border-radius: 5px;
@@ -144,11 +144,11 @@ form button {
 
 form input,
 button {
-  min-height: 35px;
+  min-height: 50px;
 }
 
 textarea {
-  min-height: 50px;
+  min-height: 100px;
 }
 
 form button:active {
