@@ -14,7 +14,7 @@
   }
 
   .top-navbar {
-    background-color: blue;
+    background-color: lightsalmon;
   }
 
   .top-navbar li {
@@ -23,9 +23,14 @@
 
   main #hamburger {
     top: 5px;
-    right: 5px;
+    left: 10px;
     font-size: 30px;
+    position: absolute;
     cursor: pointer;
+  }
+
+  .btn-toggle {
+    right: 10px;
   }
 }
 
@@ -89,5 +94,12 @@
   #hamburger {
     display: none;
     visibility: hidden;
+  }
+
+  span .btn-toggle {
+    padding-top: 90px;
+    left: 20%;
+    bottom: 20%;
+    border: 1px solid;
   }
 }
