@@ -25,8 +25,7 @@ aside {
 
 .horizontal-list li a:active {
   transition: 0.3s;
-  color: #2857a4;
-  border-bottom: 4px solid #2857a4;
+  background-color: #2857a4;
   font-weight: bold;
 }
 
