@@ -1,11 +1,12 @@
+"use strict";
+
 // STICKY NAVBAR
 window.onscroll = function () {
   myFunction();
-  myFunction2();
-  // myFunction3();
-};
+  myFunction2(); // myFunction3();
+}; // STICKY ASIDE NAVBAR
 
-// STICKY ASIDE NAVBAR
+
 var navbar = document.getElementById('stickynavbar');
 var stickyNav = navbar.offsetTop;
 
@@ -15,9 +16,9 @@ function myFunction() {
   } else {
     navbar.classList.remove('sticky');
   }
-}
+} // STICKY TOP NAVBAR, SMALL VIEW
 
-// STICKY TOP NAVBAR, SMALL VIEW
+
 var topbar = document.getElementById('stickytopbar');
 var stickyTopNav = topbar.offsetTop;
 
@@ -27,9 +28,7 @@ function myFunction2() {
   } else {
     topbar.classList.remove('sticky');
   }
-}
-
-// function myFunction3() {
+} // function myFunction3() {
 //   if (topbar.className === 'top-navbar') {
 //     topbar.className += ' responsive';
 //   } else {

@@ -4,7 +4,8 @@ body,
 nav li a,
 form input,
 form textarea,
-form button {
+form button,
+.fa {
   color: white;
 }
 
@@ -15,7 +16,8 @@ footer,
 form input,
 textarea,
 .pages,
-form button {
+form button,
+.top-navbar {
   background-image: linear-gradient(45deg, #2857a4 0%, #403066 50%);
 }
 
@@ -23,12 +25,14 @@ aside {
   background-color: rgb(68, 65, 117);
 }
 
+.top-navbar li a:active,
 .horizontal-list li a:active {
   transition: 0.3s;
   background-color: #2857a4;
   font-weight: bold;
 }
 
-.horizontal-list ul li a:hover {
+.top-navbar li a:hover,
+s .horizontal-list ul li a:hover {
   border-bottom: 4px solid #fff;
 }
