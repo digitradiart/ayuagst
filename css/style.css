@@ -31,10 +31,6 @@ body {
   position: relative;
 }
 
-.jumbotron h1 {
-  padding-top: 30%;
-}
-
 .jumbotron h4 {
   padding: 40px 0;
 }
@@ -55,6 +51,7 @@ article h1,
 footer h1 {
   text-align: center;
   padding: 24px;
+  margin-bottom: 24px;
   border-radius: 10px;
 }
 

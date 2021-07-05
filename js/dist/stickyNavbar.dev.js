@@ -3,7 +3,7 @@
 // STICKY NAVBAR
 window.onscroll = function () {
   myFunction();
-  myFunction2(); // myFunction3();
+  myFunction2();
 }; // STICKY ASIDE NAVBAR
 
 
@@ -17,21 +17,26 @@ function myFunction() {
     navbar.classList.remove('sticky');
   }
 } // STICKY TOP NAVBAR, SMALL VIEW
+// var topbar = document.getElementById('stickytopbar');
+// var stickyTopNav = topbar.offsetTop;
+// function myFunction2() {
+//   if (window.pageYOffset >= stickyTopNav ) {
+//     topbar.classList.add('sticky');
+//   } else {
+//     topbar.classList.remove('sticky');
+//   }
+// }
 
 
 var topbar = document.getElementById('stickytopbar');
 var stickyTopNav = topbar.offsetTop;
 
 function myFunction2() {
-  if (window.pageYOffset >= stickyTopNav) {
+  if (window.pageYOffset >= stickyTopNav && topbar.className === 'top-navbar') {
     topbar.classList.add('sticky');
+    topbar.classList.add('responsive');
   } else {
     topbar.classList.remove('sticky');
+    topbar.className = 'top-navbar';
   }
-} // function myFunction3() {
-//   if (topbar.className === 'top-navbar') {
-//     topbar.className += ' responsive';
-//   } else {
-//     topbar.className = 'top-navbar';
-//   }
-// }
+}

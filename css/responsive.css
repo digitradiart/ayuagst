@@ -1,6 +1,10 @@
 /* ///////////////////SMALL DEVICE/////////////////////// */
 
 @media only screen and (max-width: 900px) {
+  .jumbotron h1 {
+    padding-top: 30%;
+  }
+
   main {
     width: 100%;
   }
@@ -10,15 +14,7 @@
     visibility: hidden;
   }
 
-  .top-navbar {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    z-index: 10;
-    font-size: 20px;
-  }
-
-  .top-navbar li {
+  .top-navbar li a {
     display: none;
   }
 
@@ -40,10 +36,41 @@
   .flex-container {
     flex-direction: column;
   }
+
+  .top-navbar {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    z-index: 10;
+    font-size: 20px;
+    overflow: hidden;
+  }
+
+  .top-navbar li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .top-navbar li a:hover {
+    font-weight: bold;
+  }
+
+  .top-navbar li a:active {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  }
 }
 
 /* ///////////////////MEDIUM-LARGE DEVICE/////////////////////// */
 @media only screen and (min-width: 900px) {
+  /* JUMBOTRON */
+  .jumbotron h1 {
+    padding-top: 15%;
+  }
+
   /* ASIDE */
   aside.show-on-large {
     float: left;
@@ -99,8 +126,23 @@
     visibility: hidden;
   }
 
+  .top-nav .responsive {
+    position: relative;
+  }
+
+  .top-navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
   .pages {
-    min-height: max-content;
+    min-height: 95vh;
     text-align: justify;
     margin: 5%;
     padding: 5%;
