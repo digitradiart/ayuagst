@@ -36,3 +36,8 @@ aside {
 .horizontal-list ul li a:hover {
   border-bottom: 4px solid rgb(64, 8, 71);
 }
+
+header #arrow-down:active {
+  color: #f2bbf7;
+  transition: 0.5s;
+}

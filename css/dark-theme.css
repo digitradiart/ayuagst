@@ -33,6 +33,11 @@ aside {
 }
 
 .top-navbar li a:hover,
-s .horizontal-list ul li a:hover {
+.horizontal-list ul li a:hover {
   border-bottom: 4px solid #fff;
+}
+
+header #arrow-down:active {
+  color: #2857a4;
+  transition: 0.5s;
 }
