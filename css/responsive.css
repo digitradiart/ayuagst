@@ -10,6 +10,14 @@
     visibility: hidden;
   }
 
+  .jumbotron {
+    padding-top: 30%;
+  }
+
+  .jumbotron h1 {
+    font-size: 1.5em;
+  }
+
   .pages {
     width: 100%;
   }
