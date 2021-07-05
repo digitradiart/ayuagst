@@ -5,7 +5,8 @@ nav li a,
 form input,
 form textarea,
 form button,
-.fa {
+.fa,
+.fab {
   color: rgb(64, 8, 71);
 }
 
