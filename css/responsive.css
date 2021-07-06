@@ -1,12 +1,13 @@
 /* ///////////////////SMALL DEVICE/////////////////////// */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .jumbotron h1 {
     padding-top: 30%;
   }
 
   main {
     width: 100%;
+    clear: both;
   }
 
   .pages {
@@ -20,46 +21,39 @@
     flex-direction: column;
   }
 
-  /* ASIDE */
   aside {
-    float: left;
-    clear: left;
-    height: 100%;
+    display: none;
+    visibility: hidden;
   }
 
   /* NAVIGATION */
-  .sidenav {
-    z-index: 1111;
-    width: 35%;
-    height: 100%;
-    padding: 20px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-    line-height: 70px;
-    text-align: left;
-    float: left;
+  #stickytopbar {
+    display: flex;
+    background-color: rgb(207, 191, 221);
+    /* justify-content: space-around; */
+    padding: 20px 0;
+    height: auto;
+    align-items: center;
+    z-index: -1;
   }
 
-  .sidenav li a {
+  #stickytopbar ul {
+    display: none;
+  }
+
+  #stickytopbar .menu-toogle {
+    display: flex;
+  }
+
+  #stickytopbar .menu-toogle span {
+    /* z-index: 1111; */
     display: block;
-    font-size: 1em;
-    padding: 5px 10px;
-  }
-
-  .sidenav li a:hover {
-    transition: 0.3s;
-    margin-left: 10px;
-  }
-
-  .sidenav li a:active {
-    transition: 0.3s;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-    font-weight: 900;
-    border-radius: 10px;
+    color: black;
   }
 }
 
 /* ///////////////////MEDIUM-LARGE DEVICE/////////////////////// */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
   /* JUMBOTRON */
   .jumbotron h1 {
     padding-top: 15%;
@@ -68,13 +62,6 @@
   /* MAIN */
   main {
     width: 78%;
-    top: 0;
-    float: right;
-    clear: right;
-    overflow: hidden;
-    min-height: 100vh;
-    padding: 5%;
-    /* position: relative; */
   }
 
   /* PAGES */
@@ -91,20 +78,32 @@
     flex-direction: row;
   }
 
+  input,
+  label {
+    display: none;
+  }
+
   /* NAVIGATION */
+  .icon {
+    display: none;
+  }
+
+  /* NAVIGATION */
+
   .sidenav {
+    width: 22%;
     float: left;
     clear: left;
-    width: 22%;
     height: 100%;
     padding: 5%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     line-height: 70px;
+    background-color: forestgreen;
     text-align: left;
   }
 
   .sidenav li a {
-    display: block;
+    display: inline-block;
     font-size: 1em;
     padding: 5px 10px;
   }
@@ -121,8 +120,8 @@
     border-radius: 10px;
   }
 
-  input,
-  label {
+  #stickytopbar {
     display: none;
+    visibility: hidden;
   }
 }

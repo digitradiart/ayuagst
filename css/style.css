@@ -151,7 +151,7 @@ main .btn-toggle {
   border-radius: 50%;
   z-index: 100;
   float: right;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
 }
 
@@ -222,4 +222,15 @@ main .btn-toggle:active {
   transform: rotateY(180deg);
   z-index: 1;
   padding-top: 20%;
+}
+
+/* MAIN */
+main {
+  /* width: 78%; */
+  top: 0;
+  float: right;
+  clear: right;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 5%;
 }

@@ -29,24 +29,43 @@
         </div>
     </header>
 
-    <!-- ASIDE -->
-    <input type="checkbox" id="check">
-    <label for="check ">
-        <i class="fa fa-bars" aria-hidden="true" id="btn"></i>
-        <i class="fas fa-times" aria-hidden="true" id="cancel"></i>
-    </label>
+    <!-- ASIDE, SHOW ON LARGE -->
+    <aside class="sidenav" id="stickynavbar">
+        <div class="content">
+            <nav class="menu-list">
+                <li><a class="active" href='#home'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
+                <li><a href="#skill"><i class="fa fa-cogs" aria-hidden="true"></i>Skill</a></li>
+                <li><a href="#experience"><i class="fa fa-sticky-note" aria-hidden="true"></i>Experience</a></li>
+                <li><a href="#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i>Contact</a></li>
+            </nav>
+        </div>
+    </aside>
 
-    <aside id="stickynavbar" class="sidenav">
-        <!-- NAVIGATION -->
-        <nav>
+
+    <!-- SIDENAV, SHOW ON SMALL -->
+    <nav id="stickytopbar">
+        <div class="logo">
+            <h3>Ayu Agustina</h3>
+        </div>
+
+        <ul class="menu-list">
             <li><a class="active" href='#home'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
             <li><a href="#skill"><i class="fa fa-cogs" aria-hidden="true"></i>Skill</a></li>
             <li><a href="#experience"><i class="fa fa-sticky-note" aria-hidden="true"></i>Experience</a></li>
             <li><a href="#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i>Portfolio</a></li>
             <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i>Contact</a></li>
-        </nav>
-    </aside>
+        </ul>
+
+        <div class="menu-toggle" style="background-color:red;">
+            <input type="checkbox">
+            <span>ayu</span>
+            <span>ayu</span>
+            <span>ayu</span>
+        </div>
+    </nav>
 
     <!-- MAIN -->
     <main id="container">
@@ -206,6 +225,7 @@
     <script src="js//typingText.js"></script>
     <script src="js/stickyNavbar.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/responsiveNavbar.js"></script>
 </body>
 
 </html>
