@@ -68,7 +68,7 @@ footer h1 {
   padding: 10px;
 }
 
-#navbar .fa {
+.sidenav .fa {
   margin-right: 10px;
 }
 
@@ -222,36 +222,4 @@ main .btn-toggle:active {
   transform: rotateY(180deg);
   z-index: 1;
   padding-top: 20%;
-}
-
-/* NAVIGATION */
-aside {
-  height: 100vh;
-  padding: 5%;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  line-height: 70px;
-}
-
-aside nav {
-  text-align: left;
-  height: auto;
-  float: left;
-}
-
-aside nav li a {
-  display: block;
-  font-size: 1em;
-  padding: 5px 10px;
-}
-
-aside nav li a:hover {
-  transition: 0.3s;
-  margin-left: 10px;
-}
-
-aside nav li a:active {
-  transition: 0.3s;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  font-weight: 900;
-  border-radius: 10px;
 }

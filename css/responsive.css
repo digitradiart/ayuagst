@@ -20,8 +20,41 @@
     flex-direction: column;
   }
 
+  /* ASIDE */
   aside {
-    padding-left: 5px;
+    float: left;
+    clear: left;
+    height: 100%;
+  }
+
+  /* NAVIGATION */
+  .sidenav {
+    z-index: 1111;
+    width: 35%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    line-height: 70px;
+    text-align: left;
+    float: left;
+  }
+
+  .sidenav li a {
+    display: block;
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+
+  .sidenav li a:hover {
+    transition: 0.3s;
+    margin-left: 10px;
+  }
+
+  .sidenav li a:active {
+    transition: 0.3s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    font-weight: 900;
+    border-radius: 10px;
   }
 }
 
@@ -30,15 +63,6 @@
   /* JUMBOTRON */
   .jumbotron h1 {
     padding-top: 15%;
-  }
-
-  /* ASIDE */
-  aside.show-on-large {
-    float: left;
-    clear: left;
-    height: 100%;
-    width: 22%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
   }
 
   /* MAIN */
@@ -65,5 +89,40 @@
 
   .flex-container {
     flex-direction: row;
+  }
+
+  /* NAVIGATION */
+  .sidenav {
+    float: left;
+    clear: left;
+    width: 22%;
+    height: 100%;
+    padding: 5%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    line-height: 70px;
+    text-align: left;
+  }
+
+  .sidenav li a {
+    display: block;
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+
+  .sidenav li a:hover {
+    transition: 0.3s;
+    margin-left: 10px;
+  }
+
+  .sidenav li a:active {
+    transition: 0.3s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    font-weight: 900;
+    border-radius: 10px;
+  }
+
+  input,
+  label {
+    display: none;
   }
 }
