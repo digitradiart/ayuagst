@@ -1,5 +1,4 @@
-/* ///////////////////SMALL DEVICE/////////////////////// */
-
+/* SMALL DEVICE */
 @media only screen and (max-width: 768px) {
   .jumbotron h1 {
     padding-top: 30%;
@@ -26,33 +25,108 @@
     visibility: hidden;
   }
 
-  /* NAVIGATION */
   #stickytopbar {
+    color: white;
+    height: 50px;
+    background-color: blueviolet;
     display: flex;
-    background-color: rgb(207, 191, 221);
-    /* justify-content: space-around; */
-    padding: 20px 0;
-    height: auto;
+    justify-content: space-around;
     align-items: center;
-    z-index: -1;
   }
 
   #stickytopbar ul {
-    display: none;
-  }
-
-  #stickytopbar .menu-toogle {
+    list-style: none;
+    text-decoration: none;
     display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    width: 40%;
   }
 
-  #stickytopbar .menu-toogle span {
-    /* z-index: 1111; */
+  #stickytopbar ul li a {
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+
+  #stickytopbar ul li a:hover {
+    border-bottom: 2px solid white;
+  }
+
+  /* HAMBURGER MENU */
+  .menu-toggle {
+    flex-direction: column;
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
     display: block;
-    color: black;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  /* HAMBURGER MENU ANIMATION */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    /* cari span yang merupakan anak kedua dari class .menu-toggle */
+    transition: all 0.5s;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    /* cari span yang merupakan anak empat dari class .menu-toggle */
+    transition: all 0.5s;
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    /* cari span yang merupakan anak tiga dari class .menu-toggle */
+    transform: scale(0);
+  }
+
+  #stickytopbar ul {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    flex-direction: column;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    z-index: -1;
+    justify-content: space-evenly;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  #stickytopbar ul.slide {
+    transform: translateX(0);
   }
 }
 
-/* ///////////////////MEDIUM-LARGE DEVICE/////////////////////// */
+/* MEDIUM-LARGE DEVICE */
 @media only screen and (min-width: 768px) {
   /* JUMBOTRON */
   .jumbotron h1 {
