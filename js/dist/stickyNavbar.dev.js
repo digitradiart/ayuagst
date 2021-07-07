@@ -7,7 +7,7 @@ window.onscroll = function () {
 }; // STICKY ASIDE NAVBAR
 
 
-var navbar = document.getElementById('stickynavbar');
+var navbar = document.querySelector('.stickynavbar');
 var stickyNav = navbar.offsetTop;
 
 function myFunction() {
@@ -16,11 +16,10 @@ function myFunction() {
   } else {
     navbar.classList.remove('sticky');
   }
-} // STICKY TOP NAVBAR, SMALL VIEW
-// var topbar = document.getElementById('stickytopbar');
-// var stickyTopNav = topbar.offsetTop;
+} // var topbar = document.getElementById('stickytopbar');
+// var stickyTop = topbar.offsetTop;
 // function myFunction2() {
-//   if (window.pageYOffset >= stickyTopNav) {
+//   if (window.pageYOffset >= stickyTop) {
 //     topbar.classList.add('sticky');
 //   } else {
 //     topbar.classList.remove('sticky');
