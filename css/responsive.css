@@ -1,7 +1,7 @@
 /* SMALL DEVICE */
 @media only screen and (max-width: 768px) {
   .jumbotron h1 {
-    padding-top: 30%;
+    padding-top: 40%;
   }
 
   main {
@@ -131,13 +131,18 @@
     width: 250px;
     height: 250px;
   }
+
+  /* FOOTER */
+  footer {
+    width: 100%;
+  }
 }
 
 /* MEDIUM-LARGE DEVICE */
 @media only screen and (min-width: 768px) {
   /* JUMBOTRON */
   .jumbotron h1 {
-    padding-top: 15%;
+    padding-top: 10%;
   }
 
   /* MAIN */
@@ -192,5 +197,9 @@
   #stickytopbar {
     display: none;
     visibility: hidden;
+  }
+
+  footer {
+    width: 78%;
   }
 }

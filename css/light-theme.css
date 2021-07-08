@@ -46,3 +46,7 @@ header #arrow-down:active {
   color: #f2bbf7;
   transition: 0.5s;
 }
+
+.flip-card:hover .flip-card-inner {
+  background-color: rgb(229, 198, 241);
+}
