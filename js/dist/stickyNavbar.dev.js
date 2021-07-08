@@ -16,12 +16,4 @@ function myFunction() {
   } else {
     navbar.classList.remove('sticky');
   }
-} // var topbar = document.getElementById('stickytopbar');
-// var stickyTop = topbar.offsetTop;
-// function myFunction2() {
-//   if (window.pageYOffset >= stickyTop) {
-//     topbar.classList.add('sticky');
-//   } else {
-//     topbar.classList.remove('sticky');
-//   }
-// }
+}
