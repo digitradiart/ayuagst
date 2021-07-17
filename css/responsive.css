@@ -1,205 +1,182 @@
 /* SMALL DEVICE */
+
 @media only screen and (max-width: 768px) {
-  .jumbotron h1 {
-    padding-top: 40%;
-  }
-
-  main {
-    width: 100%;
-    clear: both;
-  }
-
-  .pages {
-    width: 100%;
-    min-height: 100vh;
-    text-align: justify;
-    padding: 10%;
-  }
-
-  .flex-container {
-    flex-direction: column;
-  }
-
-  aside {
-    display: none;
-    visibility: hidden;
-  }
-
-  #stickytopbar {
-    width: 100%;
-
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1111;
-  }
-
-  #stickytopbar ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #stickytopbar ul li a {
-    font-size: 0.8em;
-    text-decoration: none;
-    display: block;
-    padding: 0 10px;
-  }
-
-  /* HAMBURGER MENU */
-  .menu-toggle {
-    flex-direction: column;
-    display: flex;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    opacity: 0;
-    left: -5px;
-    top: -3px;
-    z-index: 100;
-    cursor: pointer;
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    transition: all 0.3s;
-    border-radius: 3px;
-  }
-
-  /* HAMBURGER MENU ANIMATION */
-  .menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
-  }
-
-  .menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
-  }
-
-  .menu-toggle input:checked ~ span:nth-child(2) {
-    /* cari span yang merupakan anak kedua dari class .menu-toggle */
-    transform: rotate(45deg) translate(-1px, -1px);
-  }
-
-  .menu-toggle input:checked ~ span:nth-child(4) {
-    /* cari span yang merupakan anak empat dari class .menu-toggle */
-
-    transform: rotate(-45deg) translate(-1px, 0);
-  }
-
-  .menu-toggle input:checked ~ span:nth-child(3) {
-    /* cari span yang merupakan anak tiga dari class .menu-toggle */
-    transform: scale(0);
-  }
-
-  #stickytopbar ul {
-    width: 50%;
-    position: absolute;
-    left: 0;
-    flex-direction: column;
-    margin-top: 50px;
-    /* top: 100vh; */
-    top: 0;
-    height: auto;
-    width: 100%;
-    line-height: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: scale(0);
-    transition: all 1s;
-  }
-
-  #stickytopbar ul.slide {
-    /* transform: translateY(0); */
-    transform: scale(1);
-  }
-
-  /* IMAGE ON PORTFOLIO */
-  .flip-card {
-    width: 200px;
-    height: 200px;
-  }
-
-  /* FOOTER */
-  footer {
-    width: 100%;
-  }
+    .jumbotron h1 {
+        padding-top: 40%;
+    }
+    main {
+        width: 100%;
+        clear: both;
+    }
+    .pages {
+        width: 100%;
+        min-height: 100vh;
+        text-align: justify;
+        padding: 10%;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    aside {
+        display: none;
+        visibility: hidden;
+    }
+    #stickytopbar {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1111;
+    }
+    #stickytopbar ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    #stickytopbar ul li a {
+        font-size: 0.8em;
+        text-decoration: none;
+        display: block;
+        padding: 0 10px;
+    }
+    /* HAMBURGER MENU */
+    .menu-toggle {
+        flex-direction: column;
+        display: flex;
+        height: 20px;
+        justify-content: space-between;
+        position: relative;
+    }
+    .menu-toggle input {
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        opacity: 0;
+        left: -5px;
+        top: -3px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .menu-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        transition: all 0.3s;
+        border-radius: 3px;
+    }
+    /* HAMBURGER MENU ANIMATION */
+    .menu-toggle span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+    .menu-toggle span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+    .menu-toggle input:checked~span:nth-child(2) {
+        /* cari span yang merupakan anak kedua dari class .menu-toggle */
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    .menu-toggle input:checked~span:nth-child(4) {
+        /* cari span yang merupakan anak empat dari class .menu-toggle */
+        transform: rotate(-45deg) translate(-1px, 0);
+    }
+    .menu-toggle input:checked~span:nth-child(3) {
+        /* cari span yang merupakan anak tiga dari class .menu-toggle */
+        transform: scale(0);
+    }
+    #stickytopbar ul {
+        width: 50%;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        margin-top: 50px;
+        /* top: 100vh; */
+        top: 0;
+        height: auto;
+        width: 100%;
+        line-height: 50px;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: scale(0);
+        transition: all 1s;
+    }
+    #stickytopbar ul.slide {
+        /* transform: translateY(0); */
+        transform: scale(1);
+    }
+    /* IMAGE ON PORTFOLIO */
+    .flip-card {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+    /* FOOTER */
+    footer {
+        width: 100%;
+    }
+    /* TOGGLE THEME */
+    main .btn-toggle {
+        right: 5px;
+    }
 }
 
+
 /* MEDIUM-LARGE DEVICE */
+
 @media only screen and (min-width: 768px) {
-  /* JUMBOTRON */
-  .jumbotron h1 {
-    padding-top: 10%;
-  }
-
-  /* MAIN */
-  main {
-    width: 78%;
-  }
-
-  /* PAGES */
-  .pages {
-    min-height: 95vh;
-    text-align: justify;
-    margin: 5%;
-    padding: 5%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  }
-
-  .flex-container {
-    flex-direction: row;
-  }
-
-  input,
-  label {
-    display: none;
-  }
-
-  /* NAVIGATION */
-  .icon {
-    display: none;
-  }
-
-  /* NAVIGATION */
-
-  .sidenav {
-    width: 22%;
-    float: left;
-    clear: left;
-    height: 100%;
-    padding: 5%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-    line-height: 70px;
-    background-color: forestgreen;
-    text-align: left;
-  }
-
-  .sidenav li a {
-    display: inline-block;
-    font-size: 1em;
-    padding: 5px 10px;
-  }
-
-  #stickytopbar {
-    display: none;
-    visibility: hidden;
-  }
-
-  footer {
-    width: 78%;
-  }
+    /* JUMBOTRON */
+    .jumbotron h1 {
+        padding-top: 10%;
+    }
+    /* MAIN */
+    main {
+        width: 78%;
+    }
+    /* PAGES */
+    .pages {
+        min-height: 95vh;
+        text-align: justify;
+        margin: 5%;
+        padding: 5%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    }
+    .flex-container {
+        flex-direction: row;
+    }
+    input,
+    label {
+        display: none;
+    }
+    /* NAVIGATION */
+    .icon {
+        display: none;
+    }
+    /* NAVIGATION */
+    .sidenav {
+        width: 22%;
+        float: left;
+        clear: left;
+        height: 100%;
+        padding: 5%;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+        line-height: 70px;
+        background-color: forestgreen;
+        text-align: left;
+    }
+    .sidenav li a {
+        display: inline-block;
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+    #stickytopbar {
+        display: none;
+        visibility: hidden;
+    }
+    footer {
+        width: 78%;
+    }
 }
