@@ -13,6 +13,7 @@
         min-height: 100vh;
         text-align: justify;
         padding: 10%;
+        margin: 20px 5px;
     }
     .flex-container {
         flex-direction: column;
@@ -109,8 +110,8 @@
     }
     /* IMAGE ON PORTFOLIO */
     .flip-card {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin: 10px;
     }
     /* FOOTER */
