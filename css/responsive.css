@@ -180,4 +180,8 @@
     footer {
         width: 78%;
     }
+    main .btn-toggle {
+        top: 5px;
+        right: 40px;
+    }
 }
